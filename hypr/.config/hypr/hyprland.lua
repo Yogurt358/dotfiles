@@ -50,7 +50,7 @@ local runner		= "rofi -show run"
 -- Autostart necessary processes (like notifications daemons, status bars, etc.)
 -- Or execute your favorite apps at launch like this:
 --
- hl.on("hyprland.start", function () 
+hl.on("hyprland.start", function ()
    hl.exec_cmd("waybar")
    hl.exec_cmd("systemctl --user start hyprpolkitagent")
  end)
@@ -229,7 +229,6 @@ hl.config({
         kb_model   = "",
         kb_options = "grp:alt_shift_toggle",
         kb_rules   = "",
-	
 	repeat_rate = 25,
 	repeat_delay = 300,
 
