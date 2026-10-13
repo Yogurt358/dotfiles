@@ -40,6 +40,7 @@ local fileManager	= "nemo"
 local browser		= "firefox"
 local launcher		= "rofi -show drun -show-icons"
 local runner		= "rofi -show run"
+local screenshot_clip	= "grim -g \"$(slurp)\" - | wl-copy"
 
 -------------------
 ---- AUTOSTART ----
@@ -269,11 +270,12 @@ hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + Space", hl.dsp.exec_cmd(launcher))
 hl.bind(secondMod .. " + Space", hl.dsp.exec_cmd(runner))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(screenshot_clip))
 
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+hl.bind(secondMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))    -- dwindle only
 
 -- Move focus with mainMod + arrow keys
