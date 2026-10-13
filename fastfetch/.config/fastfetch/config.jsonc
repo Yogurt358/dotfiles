@@ -1,5 +1,6 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  // end schema
   "modules": [
     "title",
     "separator",
@@ -31,6 +32,7 @@
     "break",
     "colors"
   ],
+// end modules
   "logo": {
     "type": "file",        // Logo type: auto, builtin, small, file, etc.
     "source": "~/dotfiles/iron-giant-head.txt",      // Built-in logo name or file path
@@ -46,4 +48,5 @@
         "2": "green"
     }
 }
+// end logo
 }
