@@ -47,6 +47,13 @@
         "1": "red",
         "2": "green"
     }
-}
+},
 // end logo
+ "display": {
+	 "color": {
+		 "title": "blue",
+		 "keys": "blue"
+	 }
+ }
+// end display
 }
