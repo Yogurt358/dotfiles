@@ -34,7 +34,7 @@
   ],
 // end modules
   "logo": {
-    "type": "file",        // Logo type: auto, builtin, small, file, etc.
+    "type": "auto",        // Logo type: auto, builtin, small, file, etc.
     "source": "~/dotfiles/iron-giant-head.txt",      // Built-in logo name or file path
     //"width": 50,           // Width in characters
     //"height": 50,          // Height in characters
